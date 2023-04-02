@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include "hellomake.h"
 
 int main(int argc, char *argv[]) {
     if (argc != 4) {
@@ -46,6 +47,8 @@ int main(int argc, char *argv[]) {
     free(matrix);
     free(vector);
     free(result);
+    
+     myPrintHelloMake();
 
     return 0;
 }
