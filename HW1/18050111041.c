@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <mpi.h>
+#include <hellomake.h>
 
 int main(int argc, char *argv[]) {
     MPI_Init(&argc, &argv);
@@ -71,7 +72,7 @@ int main(int argc, char *argv[]) {
     free(matrix);
     free(vector);
     free(result);
-
+    myPrintHelloMake();
     MPI_Finalize();
 
     return 0;
